@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Issuu</title>
 </head>
 
@@ -12,49 +13,57 @@
     <header>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Issuu_logo.svg/1280px-Issuu_logo.svg.png"
             alt="" width="150px">
-        <p>Already a user?</p>
-        <a href="">Sign in</a>
+        <div class="header-text">
+            <p>Already a user?</p>
+            <a href="">Sign in</a>
+        </div>
     </header>
 
-    <h2>Create an Issuue account.</h2>
+    <div class="form-container">
+        <h2>Create an Issuue account.</h2>
 
-    <img src="https://onymos.com/wp-content/uploads/2020/10/google-signin-button-1024x260.png" alt="" width="150px">
-    <img src="https://www.getshouse.com/assets/img/fb-login-btn.png" alt="" width="160px">
-    <p>or with email</p>
+        <img src="https://onymos.com/wp-content/uploads/2020/10/google-signin-button-1024x260.png" alt="" width="150px">
+        <img src="https://www.getshouse.com/assets/img/fb-login-btn.png" alt="" width="160px">
+        <p>or with email</p>
 
-    <div>
-        <fieldset>
-            <form action="/formulario" method="post">
-                <label>
-                    <p>Email</p>
-                    <input type="email" required>
-                </label>
+        <div>
+            <fieldset>
+                <form action="/formulario" method="post">
+                    <div class="form-group">
+                        <label>
+                            <p>Email</p>
+                            <input type="email" required>
+                        </label>
+                    </div>
 
-                <label>
-                    <p>Password</p>
-                    <input type="password" required>
-                </label>
-                <div>
-                    <label>
-                        <input type="checkbox" name="checkbox" id="" required>
-                        <span>I accept the <a href="">Terms of Service</a> and the <a href="">Professional Terms of
-                                Service</a></span>
-                    </label>
-                </div>
-                <button type="submit">Create Account</button>
-            </form>
-        </fieldset>
+                    <div class="form-group">
+                        <label>
+                            <p>Password</p>
+                            <input type="password" required>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="input-checkbox" id="" required>
+                            <p>I accept the <a href="">Terms of Service</a> and the <a href="">Professional Terms of
+                                    Service</a></p>
+                        </label>
+                    </div>
+                    <button type="submit">Create Account</button>
+                </form>
+            </fieldset>
+        </div>
     </div>
 
     <footer>
-        <nav>
+        <div class="footer-text">
             <span>Issuu Inc.</span>
             <a href="">Terms</a>
             <a href="">Privacy</a>
             <a href="">DMCA</a>
-        </nav>
+        </div>
     </footer>
-
 </body>
 
 </html>
