@@ -79,7 +79,6 @@ ul li::before {
     float: right;
 }
 
-.footer-text{
-    float: left;
-    text-align: left;
+header{
+    background-color: beige;
 }
