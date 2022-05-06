@@ -43,7 +43,7 @@ input.input-checkbox {
 }
 
 .check-container {
-  display: inline-block;
+  left: 0px;
   width: 70%;
 }
 
